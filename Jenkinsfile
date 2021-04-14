@@ -22,7 +22,7 @@ pipeline{
                 sleep 9
             }
         }
-        stage('three'){
+        stage('package'){
             steps{
                 echo 'this is the package job'
                 sh 'mvn package -DskipTests'
